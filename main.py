@@ -84,7 +84,7 @@ commands = {
 
     "выключить": "Выключает программу\n\n--------Конец Инструкции--------\n"
 }
-if os.path.exists("required") or os.path.isdir("required"):
+if not os.path.exists("required/") or not os.path.isdir("required"):
     print("\nНЕ НАЙДЕНА ПАПКА \"required\", БЕЗ НЕЁ ПРОГРАММА НЕ ЗАПУСТИТСЯ!!!\n")
     os.system("pause")
     exit(1)
